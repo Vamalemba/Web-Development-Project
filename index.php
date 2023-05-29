@@ -17,7 +17,7 @@
          
         <img src="image.png" alt="">
         <div class="title_ name">
-            <h2>Tree planting drive</h2>
+            <h2>Tree planting Process</h2>
             <h4>Save a future</h4>
         </div>
         
