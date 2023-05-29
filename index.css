@@ -1,0 +1,175 @@
+body{
+    background: linear-gradient(60deg, grey, darkgrey);
+    background-attachment: fixed;
+    font-family: 'Courier New', Courier, monospace;
+}
+.title img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    padding: 30px;
+}
+.title{
+    background: rgb(0,0,0, 0.8);
+    max-width: 600px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    border-radius: 25px;
+}
+.title_name{
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    text-align: center;
+    margin-left: 12px;
+}
+h2{
+    cursor: pointer;
+    color: green;
+    text-align: center;
+}
+h4{
+    color: rgb(31, 95, 169);
+    text-decoration: underline;
+}
+.title:hover{
+    background: rgb(0,0,0, 0.6);
+    cursor: pointer;
+    border-radius: 34px;
+}
+nav{
+
+    width: 500px;
+    margin-top: 15px;
+    float: right;
+}
+nav a{
+    color: rgb(31, 95, 169);
+    text-decoration: none;
+    background-color: rgb(245, 247, 250);
+    padding: 2.5%;
+    border-radius: 18px;
+    font-weight: bold;
+}
+.variety{
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+    padding: 1%;
+    width: 37vw;
+    height: auto;
+    margin: 20px auto;
+    margin-left: 45px;
+    border-radius: 35px;
+    border: 3px solid rgb(9, 8, 8, 0.7);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    
+}
+.variety_text, .about_text{
+    margin: auto;
+    margin-left: 19px;
+}
+.about_text:hover, .variety_text:hover{
+    cursor: pointer;
+}
+.about img, .variety img{
+    width: 50%;
+    border-radius: 12px;
+}
+.about button, .variety button{
+    width: 120px;
+    padding: 8px;
+    border: 3px solid rgb(9, 8, 8, 0.7);
+    border-radius: 15px;
+    margin-left: 4%;
+}
+.about button a, .variety button a{
+    text-decoration: none;
+    font-weight: bold;
+}
+.about h3, .variety h3{
+    text-align: center;
+    color: rgb(31, 95, 169);
+    background: rgb(255, 255, 255, 0.3);
+    max-width: 223px;
+    margin: auto;
+    border-radius: 10px;
+}
+.about{
+    color: green;
+    font-size: larger;
+    font-weight: bold;
+    padding: 1%;
+    width: 37vw;
+    height: auto;
+    margin: 20px auto;
+    margin-left: 45px;
+    border-radius: 35px;
+    border: 3px solid rgb(9, 8, 8, 0.7);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+}
+.tree_variety{
+    width: 90vw;
+    display: flex;
+    margin: 3px auto;
+}
+.about span{
+    color: crimson;
+    font-style:  italic;
+    text-decoration: underline;
+}
+@media only screen and (max-width: 760px) {
+    .title{
+        display: block;
+        margin-left: 2px;
+    }
+    .title_name nav{
+        display: flex;
+        background: transparent;
+    }
+    nav{
+
+        display: flex;
+        flex-direction: column;
+        max-width: 200px;
+        text-align: center;
+        background: transparent;
+        margin: auto;
+        padding-left: 10px;
+        margin-top: 60px;
+    }
+    nav a{
+        border-radius: 1px;
+        text-transform: bold;
+        height: 23px;
+    }
+    nav a:hover{
+        color:green;
+        background: rgb(31, 95, 169,.3);
+    }
+    .about img, .variety img{
+        display:none;
+    }
+    .tree_variety{
+        display: flex;
+        flex-direction: column;
+        margin: 2%;
+    
+    }
+    .about, .variety{
+        margin: auto;
+        min-width: 90vw;
+        min-height: 35vh;
+        margin-bottom: 23px;
+    }
+    .title{
+        margin-bottom: 23px;
+    }
+    
+    
+}
