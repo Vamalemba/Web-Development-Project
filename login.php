@@ -14,7 +14,7 @@
     
 <h3 style="color: green;">Tree planting </h3>
 
-  <form action="login.php" method="POST">
+  <form action="check_login.php" method="POST">
   <h2>Login</h2>
     <fieldset>
       <label for="username">Username: </label><br>

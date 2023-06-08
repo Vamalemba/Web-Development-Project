@@ -11,18 +11,16 @@
     echo"Error: ".mysqli_connect_error();
     exit();
   }
-      if( $username="" || $pass="" || $email=""){
-        echo"Null records not inserted";
-        ?>
-        <meta http-equiv="refresh" content="5, signup.php">
-        <?php
-      }else{
         if($pass == $conf_pass){
           $sql = "INSERT INTO clients (username, email, pass, reg_time )
-            VALUES('$username','$pass','$email',now())";
+            VALUES('$username','$email','$pass',now())";
 
             if(mysqli_query($con, $sql)){
               echo"Account Created";
+              ?>
+              <meta http-equiv="refresh" content="5, login.php">
+
+              <?php
             }
             else{
               echo"Unable to connect, please try again!";
@@ -36,7 +34,6 @@
             ?>
             <meta http-equiv="refresh" content="5, signup.php"><?php
           }
-        }
 
     mysqli_close($con);
 
